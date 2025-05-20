@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
-
+    <link rel="icon" type="image/png" href="images/favicon.ico">
 
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -20,12 +20,16 @@
 
     <nav>
         <ul class="topbar">
-            <li id="logo"> <a href="#"></a></li>
-            <li class="hideOnMobile"> <a href="#about">About</a></li>
-            <li class="hideOnMobile"> <a href="#whatIsDirectCremation">What is Direct Cremation</a></li>
-            <li class="hideOnMobile"> <a href="#whyChooseDirectCremation">Why Choose Direct Cremation</a></li>
-            <li class="hideOnMobile"> <a href="#ourServices">Services</a></li>
-            <li class="hideOnMobile"> <a href="#costs">Costs</a></li>
+            <li id="logo"><a href="#about"></a></li>
+            <li class="hideOnMobile lead phone-number"><a href="0123456789"><strong>Call us: 01234 567 890</strong></a></li>
+            <li class="spacer"></li>
+            <li class="hideOnMobile lead "> <a href="#about"><strong>About</strong> </a></li>
+            <li class="hideOnMobile lead"> <a href="#whatIsDirectCremation"><strong>What is Direct Cremation</strong> </a></li>
+            <li class="hideOnMobile lead"> <a href="#whyChooseDirectCremation"><strong>Why Choose Direct Cremation</strong> </a></li>
+            <li class="hideOnMobile lead"> <a href="#ourServices"><strong>Services</strong> </a></li>
+            <li class="hideOnMobile lead"> <a href="#ourPromise"><strong>Our Promise</strong> </a></li>
+
+            <li class="hideOnMobile lead"> <a href="#costs"><strong>Prices</strong></a></li>
             <li class="menuButton" onclick="showSidebar();return false"> 
             <a href="#">
                 <svg
@@ -33,21 +37,29 @@
                     fill="#1f1f1f">
                     <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
                 </svg>
-            </a></li>
+            </a></li>  
         </ul>
 
         <ul class="sidebar show">
-            <li onclick=hideSidebar()> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+            <li onclick=hideSidebar()> 
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px"
                         viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
                         <path
-                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
-                    </svg></a></li>
+                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 
+                            224 224 224-56 56-224-224-224 224Z" />
+                    </svg>
+                </a>
+            </li>
             <li id="logo"> <a href="#"></a></li>
             <li> <a href="#about">About</a></li>
             <li> <a href="#whatIsDirectCremation">What is Direct Cremation</a></li>
             <li> <a href="#whyChooseDirectCremation">Why Choose Direct Cremation</a></li>
             <li> <a href="#ourServices">Service</a></li>
+            <li> <a href="#ourPromise">Our Promise</a></li>
             <li> <a href="#costs">Costs</a></li>
+            <li class="sidebar-contact w-100">
+                <a href="#contact" class="btn btn-success w-100 text-center">Contact Us</a></li>
         </ul>
     </nav>
 
@@ -251,7 +263,7 @@
         </div>
 
         <div id="ourPromiseToYou" class="mt-3 pt-5 pb-1 text-center">
-            <div id="about" class="px-4 pb-1 text-center">
+            <div id="ourPromise" class="px-4 pb-1 text-center">
                 <div class="px-4 py-2 my-2 text-center"> <img class="d-block mx-auto mb-4" src="./images/balloon-heart.svg" alt=""
                         width="172" height="157">
                     <h1 class="display-5 fw-bold text-body-emphasis">Our Promise to You</h1>
@@ -297,12 +309,12 @@
             <main>
                 <div class="row row-cols-1 row-cols-md-2 mb-2 text-center m-2">
                     <div class="col">
-                        <div class="card mb-4 rounded-3 shadow-sm">
-                            <div class="card-header py-3 pricing-table-header">
+                        <div class="card mb-4 rounded-3 shadow-sm border border-dark border-3">
+                            <div class="card-header py-3 pricing-table-header ">
                                 <h4 class="my-0 fw-normal ">Direct Cremation</h4>
                             </div>
-                            <div class="card-body ">
-                                <h1 class="card-title pricing-card-title">£1000<small class="text-body-secondary fw-light"></small>
+                            <div class="card-body border-top border-dark border-3">
+                                <h1 class="card-title pricing-card-title ">£1000<small class="text-body-secondary fw-light"></small>
                                 </h1>
                                 <ul class="list-unstyled mt-3 mb-4 lead">
                                     <li>Respectful Transfer of Your Loved One</li>
@@ -313,11 +325,11 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card mb-4 rounded-3 shadow-sm border border-dark border-3">
                             <div class="card-header py-3 pricing-table-header">
                                 <h4 class="my-0 fw-normal">Direct Cremation +</h4>
                             </div>
-                            <div class="card-body">
+                            <div class="card-body border-top border-dark border-3">
                                 <h1 class="card-title pricing-card-title ">£1,375<small class="text-body-secondary fw-light"></small>
                                 </h1>
                                 <ul class="list-unstyled mt-3 mb-4 lead">
@@ -352,7 +364,7 @@
     
             <div class="social-links lead">
                 <h3>Follow Us</h3>
-                <img src="images/facebook.svg" alt="" class="facebook"><br>
+                <a href="https://www.facebook.com/share/1CZx5URkbC/?mibextid=wwXlfr"><img src="images/facebook.svg" alt="" class="facebook"></a><br>
                 <!-- <a href="#"></a><br>
                 <a href="#"></a> -->
             </div>

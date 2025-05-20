@@ -38,33 +38,35 @@ nav{
   position: sticky;
 }
 
-/* #logo{
-  height: 30px;
-  width: 30px;
+#logo{
+  height: 45px;
+  width: auto;
+  
 }
 
 #logo a{
   display: block;
   height: 100%;
   width: 100%;
-  background-image: url("images/Logo.jpg");
+  background-image: url("images/Cropped_logo.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-} */
+}
 
 nav ul{
   width: 100%;
   list-style: none;
   display: flex;
-  justify-content: flex-start;
   align-items: center;
+  padding-left : 10px;
+  margin: 0;
 
 
 }
 
 nav li{
-  height: 50px;
+  height: 60px;
 }
 
 nav a{
@@ -74,10 +76,18 @@ nav a{
   display: flex;
   align-items: center;
   color: black;
-
+  font-size: 1.00rem;
 }
-nav li:first-child{
+/* nav li:First-child{
   margin-right: auto;
+} */
+
+nav .spacer{
+  flex: 1;
+}
+
+.phone-number{
+  margin-left: 10px;
 }
 
 nav a:hover{
@@ -116,12 +126,25 @@ nav a:hover{
   transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out, visibility 0.5s ease-in-out; */
 }
 
+.sidebar-contact {
+  margin-top: auto;
+  padding: 10px;
+}
+
 .sidebar li{
   width: 100%;
 }
 
 .sidebar a{
   width: 100%;
+}
+
+.sidebar #logo{
+  display: none;
+}
+
+.sidebar a:hover{
+  background-color: transparent;
 }
 
 .content {
