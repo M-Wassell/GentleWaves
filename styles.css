@@ -48,7 +48,7 @@ nav{
   display: block;
   height: 100%;
   width: 100%;
-  background-image: url("images/Cropped_logo.jpg");
+  background-image: url("./public/images/Cropped_logo.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -76,7 +76,7 @@ nav a{
   display: flex;
   align-items: center;
   color: black;
-  font-size: 1.00rem;
+  font-size: 0.95rem;
 }
 /* nav li:First-child{
   margin-right: auto;
