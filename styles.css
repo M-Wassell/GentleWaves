@@ -3,8 +3,10 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* font-family: 'Helvetica Neue', Arial, sans-serif; */
-  
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 
   line-height: 1.6;
 }
@@ -13,7 +15,7 @@ html{
   scroll-behavior: smooth;
   /* scroll-snap-type: y mandatory; */
 
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
   overflow-x: hidden;
 }
 
@@ -22,7 +24,7 @@ body{
   background-color: white;
     color: #333;
   background-position: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  ;
 }
 
 body::-webkit-scrollbar{
@@ -147,6 +149,40 @@ nav a:hover{
   background-color: transparent;
 }
 
+.responsive-first-img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+  /* border-radius: 16px; */
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+  padding: 8px;
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  transition: max-width 0.3s ease;
+}
+
+.responsive-second-img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+   border-radius: 16px; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 8px;
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  transition: max-width 0.3s ease;
+}
+
+@media (min-width: 1200px) {
+  .responsive-first-img,
+  .responsive-second-img
+  {
+      max-width: 50%;
+  }
+}
+
 .content {
   width: 100%;
   margin: auto;
@@ -254,7 +290,7 @@ footer{
 }
 
 
-@media(max-width: 768px) {
+@media(max-width: 1090px) {
   .hideOnMobile{
       display:none;
   }
