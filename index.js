@@ -9,28 +9,57 @@ function hideSidebar() {
 }
 
 //Scroll to each tab after click
+// document.addEventListener("DOMContentLoaded", function () {
+//   const links = document.querySelectorAll("nav a");
+//   links.forEach((link) => {
+//     link.addEventListener("click", function (event) {
+//       event.preventDefault();
+//       const targetId = this.getAttribute("href").substring(1);
+//       console.log("Target ID:", targetId);
+//       const targetSection = document.getElementById(targetId);
+//       if (targetSection) {
+//         console.log("Target Section:", targetSection);
+//         window.scrollTo({
+//           top:
+//             targetSection.offsetTop -
+//             document.querySelector("nav").offsetHeight,
+//           behavior: "smooth",
+//         });
+//       } else {
+//         console.log("Target section not found");
+//       }
+//     });
+//   });
+// });
+
 document.addEventListener("DOMContentLoaded", function () {
   const links = document.querySelectorAll("nav a");
   links.forEach((link) => {
     link.addEventListener("click", function (event) {
-      event.preventDefault();
-      const targetId = this.getAttribute("href").substring(1);
-      console.log("Target ID:", targetId);
-      const targetSection = document.getElementById(targetId);
-      if (targetSection) {
-        console.log("Target Section:", targetSection);
-        window.scrollTo({
-          top:
-            targetSection.offsetTop -
-            document.querySelector("nav").offsetHeight,
-          behavior: "smooth",
-        });
-      } else {
-        console.log("Target section not found");
+      const href = this.getAttribute("href");
+
+      // Only intercept links that start with #
+      if (href.startsWith("#")) {
+        event.preventDefault();
+        const targetId = href.substring(1);
+        console.log("Target ID:", targetId);
+        const targetSection = document.getElementById(targetId);
+        if (targetSection) {
+          console.log("Target Section:", targetSection);
+          window.scrollTo({
+            top:
+              targetSection.offsetTop -
+              document.querySelector("nav").offsetHeight,
+            behavior: "smooth",
+          });
+        } else {
+          console.log("Target section not found");
+        }
       }
     });
   });
 });
+
 
 // Hide sidebar when clicking outside of it
 document.addEventListener("DOMContentLoaded", function () {
